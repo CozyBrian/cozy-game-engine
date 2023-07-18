@@ -16,10 +16,13 @@ class Game {
     void render();
     void clean();
 
-    bool running() { return isRunning; }
+    bool running();
 
   private:
+    int count = 0;
     bool isRunning;
     SDL_Window *window;
     SDL_Renderer *renderer;
 };
+
+#endif /* Game_hpp */
